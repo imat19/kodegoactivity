@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RWD</title>
+
+    <!--CSS-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header h1 {
+            height: 2em;
+            margin: auto;
+            padding-top: 1em;
+            text-align: center;
+            background-color: red;
+        }
+
+        nav {
+            height: 2em;
+            background-color: black;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            padding-top: .5em;
+        }
+
+        li {
+
+            flex-direction: row;
+            margin: auto;
+        }
+
+        li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: .5em;
+            line-height: 2em;
+            border: 1px solid green;
+        }
+
+        /* Media Query */
+
+        @media screen and (min-width: 768px) {
+
+            header h1 {
+                background-color: blue;
+            }
+
+            nav {
+                height: 2.5em;
+            }
+
+        }
+
+
+
+
+        @media screen and (min-width: 1280px) {
+
+            header h1 
+        }
+        {
+                background-color: orange;
+            }
+
+            nav {
+                height: 3em;
+            }
+
+
+            li {
+
+                flex-direction: row;
+                margin: .5em 2em 2em 2em;
+            }
+
+            section {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+    
+            }
+
+            .lifestyle,
+            .business,
+            .sports {
+                width: 34.33%;
+                height: 10em;
+
+                flex-wrap: wrap;
+            }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Online Magazine</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="lifestyle">
+        <h1>Lifestyle</h1>
+        <p>Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Maecenas sit amet pretium urna.
+        </p>
+    </section>
+
+    <section class="business">
+        <h1>Business</h1>
+        <p>Vivamus venenatis velit nec neque ultricies. eget elementum
+            magna tristique.
+        </p>
+    </section>
+
+    <section class="sports">
+        <h1>Sports</h1>
+        <p>Quisque vehcula, risus eget aliquam placerat,
+            purus leo tincidunt eros, eget luctus quam orci in velit.
+        </p>
+    </section>
+</body>
+
+</html>

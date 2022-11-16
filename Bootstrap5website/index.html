@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bryl's Burgers</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- styles -->
+  <style>
+    .Logo {
+      margin: auto;
+    }
+
+    li {
+      margin-left: 4.5em;
+    }
+
+    h1,
+    .fontcolor,
+    .fa,
+    hr {
+      color: rgb(210, 105, 66);
+    }
+
+    .container {
+      font-family: Arial, Helvetica, sans-serif;
+      letter-spacing: 2px;
+    }
+
+    .btn {
+      background-color: rgb(210, 105, 66);
+    }
+
+    .fa {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      border-style: dotted;
+    }
+
+    hr {
+      opacity: .2;
+    }
+  </style>
+
+  <header>
+    <!-- For Mobile/tablet -->
+    <nav class="navbar navbar-expand-sm bg-dark d-md-none d-lg-block " style="height: 7.5em;">
+      <div class="container-fluid ">
+        <img src="logo.png" width="100" height="100" class="Logo">
+        <ul class=" navbar-nav justify-content-center " style="width: 100%;">
+          <li class="nav-item ">
+            <a class="nav-link text-white fs-3" href="#Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fs-3" href="#Menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fs-3" href="#Promo">Promo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fs-3" href="#About">About us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="navbar fixed-top container-fluid bg-dark">
+      <div class="container-fluid bg-dark d-lg-block d-xl-none">
+        <a class="navbar-brand" href="#Home"><img src="logo.png" alt="logo" class="Logo"
+            style="width: 100; height: 3em"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <i class="fa-solid fa-bars" style="color:white"></i>
+        </button>
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <img src="logo.png" alt="logo" style="width: 25%; height: 3 fs-3em">
+            <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body bg-dark">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#Home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#Promo">Promo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#Menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#About">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- carousel -->
+  <section id="Home">
+    <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="header.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="header2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="header3.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- Content -->
+
+  <!-- Menu -->
+  <section id="Menu" class="text-center" style="margin-top: 5em; margin-bottom: 5em;">
+    <div class="container-fluid">
+      <div class="col">
+        <h4>Burger Menu</h4>
+        <h1>Best Ever Burgers</h1>
+      </div>
+      <div class="row" style="align-items: center;">
+        <div class="pt-5 col-6">
+          <img
+            src="https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/5:4/w_3129,h_2503,c_limit/Smashburger-recipe-120219.jpg"
+            alt="Burger" class="img-thumbnail" style="width: 50%;border-radius: 50%;">
+          <h1>Beefy Burger</h1>
+          <p>Great way to make your business appear trust and relevant.</p>
+        </div>
+        <div class="pt-5 col-6">
+          <img
+            src="https://www.foodandwine.com/thmb/I_QAIl1ARO5vVzSmC_MFFYHFxs8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/hatch-chile-smash-burgers-FT-seo-RECIPE0719_0-183c980af99541528d6cfa7f40ca2c21.jpg"
+            alt="Burger" class="img-thumbnail" style="width: 50%;border-radius: 50%;">
+          <h1>Burger Boys</h1>
+          <p>Great way to make your business appear trust and relevant.</p>
+        </div>
+        <div class="pt-5 col-6">
+          <img
+            src="https://www.tastingtable.com/img/gallery/what-makes-restaurant-burgers-taste-different-from-homemade-burgers-upgrade/l-intro-1662064407.jpg"
+            alt="Burger" class="img-thumbnail" style="width: 50%;border-radius: 50%;">
+          <h1>Burgers Bizz</h1>
+          <p>Great way to make your business appear trust and relevant.</p>
+        </div>
+        <div class="pt-5 col-6">
+          <img
+            src="https://assets.epicurious.com/photos/5580664481ac1e502367643f/2:1/w_2000,h_1000,c_limit/56389654_double-rl-ranch-burger_1x1.jpg"
+            alt="Burger" class="img-thumbnail" style="width: 50%; border-radius: 50%;">
+          <h1>Rocket Burger</h1>
+          <p>Great way to make your business appear trust and relevant.</p>
+        </div>
+        <div class="pt-5 col-6">
+          <img
+            src="https://www.unileverfoodsolutions.com.au/dam/global-ufs/mcos/anz/calcmenu/recipe/killer-recipes-update/beef-burger-with-deep-fried-bacon-and-thousand-island-dressing_main-header.jpg"
+            alt="Burger" class="img-thumbnail" style="width: 50%;border-radius: 50%;">
+          <h1>Smokin Burger</h1>
+          <p>Great way to make your business appear trust and relevant.</p>
+        </div>
+        <div class="pt-5 col-6">
+          <img src="https://staticfanpage.akamaized.net/wp-content/uploads/sites/22/2021/09/beef-burger-1200x675.jpg"
+            alt="Burger" class="img-thumbnail" style="width: 50%;border-radius: 50%;">
+          <h1>Crackles Burger</h1>
+          <p>Great way to make your business appear trust and relevant.</p>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto d-lg-none d-lg-block">
+          <button type="button" class="btn btn-primary btn-sm mt-4">Load More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- banner -->
+  <div
+    style="position: relative; width: 100%; height: 0; padding-top: 12.3626%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
+    <iframe loading="lazy"
+      style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+      src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFR8CLmZdM&#x2F;view?embed"
+      allowfullscreen="allowfullscreen" allow="fullscreen"> </iframe>
+  </div>
+
+
+  <!-- About Us -->
+  <section id="About" class="mt-5 pt-5">
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col-6 d-none d-sm-none d-md-none d-lg-block">
+          <img
+            src="https://media.istockphoto.com/id/973108512/photo/cropped-view-of-girl-in-apron-making-homemade-cheeseburgers-on-baking-paper-on-wooden-tabletop.jpg?s=612x612&w=0&k=20&c=3KgB5xurvkBOlagGdo_F7XbiM4DLX11HnN5OinkKnV4="
+            alt="burger making" style="width: 100%;border-radius: 70%;">
+        </div>
+        <div class="col m-5">
+          <h4>About Us</h4>
+          <h1>BEST BURGER IN YOUR CITY</h1>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+            in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+          <p>We are a burger restaurant based in Bonifacio High Street, Taguig which offers affordable yet satisfying,
+            juicy, and lip-smacking burgers. It’s just beef, cheese and onions; no sauce or any other veggies. The steam
+            from the juices of the beef and onions is locked into the buns. It’s just pure, in a burger sense. We're
+            open Tuesdays to Sundays from 1:00 PM to 2:00 AM. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo -->
+  <section id="Promo">
+    <div class="mt-5">
+      <img src="promobanner.png" alt="promo" style="width: 100%; height: 10em;">
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container bg-light p-3 ">
+
+      <div class="row text-center mt-5 ">
+        <div class="col">
+          <h3><strong>Taguig</strong></h3>
+          <p>Bonifacio High Street, Taguig</p>
+          <p class="fontcolor">+10 378 483 6782</p>
+        </div>
+
+
+        <div class="col pe-2 ms-3 text-start">
+          <h3><strong>Stay Connected</strong></h3>
+          <div class="input-group mb-3 mt-3 p-1 border border-opacity-25 rounded-pill">
+            <input type="text" class="form-control rounded-pill border border-0 pe-3" placeholder="Enter your Email"
+              aria-label="Enter your Email">
+            <button class="btn text-white rounded-pill" type="button">Sign Up</button>
+
+          </div>
+
+          <div class="col-auto">
+            <span id="connected" class="form-text">
+              <p>Stay connect with us to get exclusive offer!</p>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="logos mt-4 mb-5 text-center">
+        <i class="fa fa-facebook ms-5 pt-2" style="font-size: 30px; color: rgb(210, 105, 66);" aria-hidden="true"></i>
+        <span class="fa fa-instagram ms-5 pt-2" style="font-size: 30px; color: rgb(210, 105, 66);"
+          aria-hidden="true"></span>
+        <span class="fa fa-twitter ms-5 pt-2" style="font-size: 30px; color: rgb(210, 105, 66);"
+          aria-hidden="true"></span>
+
+      </div>
+
+      <hr>
+      <p>
+        <center>Copyright © 2022 All rights reserved</center>
+      </p>
+
+    </div>
+  </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</html>

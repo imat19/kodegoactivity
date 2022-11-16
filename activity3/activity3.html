@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+      activy3
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+  <style>*
+    h1 {
+      background-color: yellow;
+      margin-bottom: 0px;  
+      margin-top: -7px;
+      text-align: center;
+      padding: 10px;    
+      }
+   
+    .navbar {
+      background-color: gray;
+      padding: 5px;
+    }
+    .main-container {
+      display: flex;
+      flex-direction: row;   
+    }
+
+    .container1, .container2, .container3 {
+      border: solid;
+      border-color: yellow;
+      border-width: .5px;
+      padding-left: 15px;
+      padding-right: 10px;
+      width: 33.33%;    
+    }
+
+    body {
+  background-color: lightgreen;
+}
+
+body {
+  background-color: lightgreen;
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    background-color: lightblue;
+  }
+  .container3 {
+    display: none;
+  }
+  h1 {
+    background-color: red;
+  }
+  .container1,.container2 {
+    border-color: red;
+  }
+}
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: lightblue;
+  }
+  .container3, .container2 {
+    display: none;
+  }
+  h1 {
+    background-color: blue;
+  }
+  .container1 {
+    border-color: blue;
+  }
+}
+
+
+  </style>
+</head>
+
+<body>
+  
+  <div>
+  <h1> Online Magzine</h1>
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#About">About Us</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+  <div>
+  
+<div class="main-container">  
+  <div class="container1">
+    <h2>Life Sytle </h2>
+    <p>
+      Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit. Maecenas sit amet pretium urna.
+    </p>
+  </div>
+
+  <div class="container2">
+    <h2>Business </h2>
+    <p>
+      Vivamus venenatis velit nec neque ultricies. eget elementum
+      magna tristique.
+    </p>
+  </div>
+
+  <div class="container3">
+    <h2>Sports </h2>
+    <p>
+      Quisque vehcula, risus eget aliquam placerat,
+      purus leo tincidunt eros, eget luctus quam orci in velit.
+    </p>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
