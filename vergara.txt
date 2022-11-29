@@ -1,0 +1,42 @@
+// 1.Create a variable called x, assign the value 50 to it.
+             x = 50
+
+        //2.Display using alert() the sum of 5 + 10, by declaring and using two variables: x and y.
+             x = 5;
+             y = 10
+            alert ( x + y );
+
+        //3.Create a variable called z, assign x + y to it, with x = 5; and y = 10; and display the result in an alert.
+            x = 5;
+             y= 10;
+            z = x + y
+            alert ( z )
+
+        //4.On one single line, declare three variables with the following names and values:
+            let firstName = "Jose", lastName = "Rizal", age = 35;
+
+        //5.Multiply 10 with 5, and alert the result:
+            alert(10*5);
+        
+        //6.Divide 10 by 2, and alert the result:
+            alert (10/2);
+
+        //7.Alert the remainder when 15 is divided by 9.   
+            alert (15/19);
+
+        //8.Use the correct assignment operator that will result in x being 15 (same as x = x + y) with x  = 10; and y = 5;
+           let x = 10;
+           let y = 5;
+            x+=y;
+
+        //9.Use the correct assignment operator that will result in x being 50 (same as x = x * y) with x  = 10; and y = 5;
+          let x = 10;
+          let y = 5;
+              x*=y
+        
+        //10.Use comments to describe the correct data type of the following variables:
+        let length = 16; // integer
+        let lastName = "Bonifacio"; // string
+        let isOpen = false; // Boolean
+        let balance = 500.50 //Float
+        let middleInitial = 'Y' // Character
