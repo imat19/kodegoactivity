@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="practice"> 
+    <h3>Example String:</h3> <input id="textHere"  onkeyup="val" placeholder="text"/>
+    <h3>Expected Output: <span id="output"></span></h3>
+  <button id="click-me">Click me!</button>
+  </div>
+  
+
+  <script>
+    let txtH = document.querySelector("#textHere");
+    let btn = document.querySelector('#click-me');
+
+        btn.addEventListener("click",function (event){
+        event.preventDefault();
+        txtH.style.background = "blue";
+        btn.style.background = "yellow";
+      });
+ 
+  </script>
+</body>
+</html>

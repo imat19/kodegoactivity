@@ -12,13 +12,6 @@ window.onload = function(){
   newDiv.className = 'purple';
   document.querySelector('section').appendChild(newDiv);
 
-  let secDiv = document.createElement('div');
-  secDiv.className = 'black';
-  document.querySelector('section').appendChild(secDiv);
-
-  let thirdDiv = document.createElement('div');
-  thirdDiv.className = 'pink';
-  document.querySelector('section').appendChild(thirdDiv);
   
 }
 
